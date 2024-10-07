@@ -9,6 +9,10 @@ export function getPerson(): object {
 
 export class Person {
   constructor(public id: number, public name: string) {}
+
+  getRandom(): number {
+    return Math.random();
+  }
 }
 
 export class Worker {

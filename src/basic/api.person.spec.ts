@@ -12,3 +12,8 @@ test("person, worker 필드가 같으면 같게 객체로 처리한다.", () => 
 
   expect(person).toMatchObject(worker);
 });
+
+test("person.getRandom 랜덤값을 잘 받는다.", () => {
+  const person = new Person(1, "John");
+  expect(person.getRandom()).toStrictEqual(expect.any(Number));
+});
